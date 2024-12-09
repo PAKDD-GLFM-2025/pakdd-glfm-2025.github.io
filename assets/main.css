@@ -1,5 +1,5 @@
 .card-img-top {
     object-fit: cover; /* 비율 유지하면서 잘라내기 */
     width: 100%; /* 카드 폭에 맞춤 */
-    height: 200px; /* 원하는 높이 */
+    height: 100px; /* 원하는 높이 */
 }
