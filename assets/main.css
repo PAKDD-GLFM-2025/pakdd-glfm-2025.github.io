@@ -202,11 +202,11 @@ ul.custom-list li {
 .custom-bullets li::before {
     content: "●"; /* Custom bullet, you can replace with other symbols like "◆", "✓", etc. */
     position: absolute;
-    left: 0; /* Position bullet at the start */
-    font-size: 0.1em; /* Adjust bullet size */
+    left: 0; /* Position bullet at the start */    
+    font-size: 0.8em; /* Adjust bullet size */
     color: #000000; /* Color for the bullet (matches PAKDD style) */
     line-height: 1; /* Align bullet with text */
-   top: 1.0em;
+    top: 0.4em;
 }
 
 /* program schedule */
