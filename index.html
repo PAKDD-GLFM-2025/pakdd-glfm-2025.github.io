@@ -11,25 +11,28 @@
 </head>
 
 <body>
-    <div class="container-fluid px-3">
+    <div class="container px-4 px-md-5"> 
         <!-- Banner -->
-        <div class="position-relative mb-4">
-            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid">
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 1;">
-                <!-- 텍스트 크기를 반응형으로 변경 -->
+        <div class="position-relative mb-4" style="min-height: 400px;">
+            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        
+            <!-- PAKDD GLFM 텍스트 -->
+            <div class="position-absolute top-25 start-50 translate-middle text-center text-white" style="z-index: 1;">
                 <h1 class="text-danger fw-bold display-4 display-md-3 display-sm-5">PAKDD GLFM</h1>
                 <h2 class="text-dark fw-light display-6 display-md-5 display-sm-6">2025</h2>
             </div>
-            <div class="position-absolute bottom-0 end-0 text-end text-warning p-3" style="z-index: 1;">
-                <!-- 날짜 및 위치 텍스트 크기를 반응형으로 변경 -->
+        
+            <!-- 날짜 및 위치 -->
+            <div class="position-absolute bottom-10 end-0 text-end text-warning p-3" style="z-index: 1;">
                 <p class="mb-0 fs-4 fs-md-5 fs-sm-6">June 10-13, 2025</p>
                 <p class="fs-5 fs-md-6 fs-sm-7">Sydney, Australia</p>
             </div>
         </div>
-</div>
+    </div>
 
         <!-- About Section -->
         <section class="mb-5">
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">About PAKDD-GLFM 2025</h2>
             <p>                
               In <strong>PAKDD-GLFM 2025 (Workshop on Graph Learning with Foundation Models @ <a href="https://pakdd2025.org/" target="_blank">PAKDD 2025</a>)</strong>, we aim to bring together researchers and practitioners from academia and industry to discuss and advance the state-of-the-art in graph machine learning with foundation models.
@@ -44,10 +47,12 @@
                 As graphs continue to be a powerful tool for modeling real-world interactions, the development of GFMs is becoming increasingly important with real-world applications spanning diverse fields, including detecting anomalies in social networks, drug discovery through graph-based molecular classification, enhancing recommendation systems for personalized content, and strengthening cybersecurity by identifying vulnerabilities in network structures.
                 Again, the emergent capabilities of GFMs allow them to adapt to new applications, generalizing across diverse domains and uncovering insights beyond the reach of traditional models.        
             </p> 
+            </div>
         </section>
 
         <!-- Call For Papers -->
         <section class="mb-5">
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Call For Papers</h2>
             <p>The <strong>scope</strong> of this workshop includes (but is not limited to):</p>
             <ul class="list-group list-group-flush">
@@ -58,10 +63,12 @@
                 <li class="list-group-item"><strong>Multi-modality in graph tasks:</strong> Integration of multi-modal data.</li>
                 <li class="list-group-item"><strong>New applications:</strong> Leveraging emergent capabilities for real-world scenarios.</li>
             </ul>
+            </div>
         </section>
 
         <!-- Important Dates -->
         <section class="mb-5">
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Important Dates</h2>
             <ul class="list-unstyled">
                 <li><strong>Workshop Paper Deadline:</strong> February 22, 2025</li>
@@ -69,19 +76,22 @@
                 <li><strong>Camera-ready Submission:</strong> March 29, 2025</li>
                 <li><i>All deadlines are 23:59 Pacific Standard Time (PST).</i></li>
             </ul>
+            </div>
         </section>
 
         <section>
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Submission Instructions</h2>
             <div class="alert alert-info mt-3" role="alert">
                 <p>
                     Submission guidelines will be available soon on the official conference website. Authors are encouraged to prepare their papers using the provided template and adhere to the submission deadlines.
                 </p>
-            </div>
+            </div></div>
         </section>
 
         <!-- Program Schedule -->
         <section class="mb-5">
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Program Schedule</h2>
             <table class="table table-striped">
                 <thead class="table-dark">
@@ -104,10 +114,12 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </section>
 
         <!-- Organizers -->
         <section class="mb-5">
+            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Organizers</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <!-- Organizer 1 -->
@@ -227,6 +239,7 @@
                     </div>
                 </div>
             </div>
+            </div>
 
         </section>
 
@@ -257,6 +270,28 @@
             border-radius: 8px; /* 둥근 모서리 */
             text-transform: capitalize;
             margin-bottom: 20px;
+        }
+        .content-padding {
+            padding: 0 15px; /* 왼쪽과 오른쪽에 패딩 추가 */
+        }
+
+        @media (min-width: 768px) {
+            .content-padding {
+                padding: 0 30px; /* 더 넓은 화면에서는 패딩 증가 */
+            }
+            .top-25 {
+                top: 15%; /* 작은 화면에서는 텍스트를 더 위로 이동 */
+            }
+    
+            .bottom-10 {
+                bottom: 5%; /* 날짜 텍스트를 더 위로 이동 */
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .content-padding {
+                padding: 0 50px; /* 데스크톱 화면에서는 더 넓은 패딩 */
+            }
         }
     </style>
 </body>
