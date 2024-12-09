@@ -182,7 +182,7 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
 /* Custom bullet styling */
 ul.custom-list {
     line-height: 1.8; /* Adjust the number to control spacing */
-    padding-left: 20px; /* Add indentation for list items */
+    padding-left: 10px; /* Add indentation for list items */
 }
 
 ul.custom-list li {
@@ -190,23 +190,23 @@ ul.custom-list li {
 }
 .custom-bullets {
     list-style-type: none; /* Remove default bullets */
-    padding-left: 20px; /* Add some padding to indent */
+    padding-left: 10px; /* Add some padding to indent */
 }
 
 .custom-bullets li {
     position: relative; /* Allow bullet customization */
     margin-bottom: 10px;
-    padding-left: 10px; /* Space for the custom bullet */
+    padding-left: 30px; /* Space for the custom bullet */
 }
 
 .custom-bullets li::before {
     content: "●"; /* Custom bullet, you can replace with other symbols like "◆", "✓", etc. */
     position: absolute;
     left: 0; /* Position bullet at the start */    
-    font-size: 0.8em; /* Adjust bullet size */
+    font-size: 1em; /* Adjust bullet size */
     color: #000000; /* Color for the bullet (matches PAKDD style) */
     line-height: 1; /* Align bullet with text */
-    top: 0.4em;
+    top: 0.5em;
 }
 
 /* program schedule */
