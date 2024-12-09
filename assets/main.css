@@ -196,7 +196,7 @@ ul.custom-list li {
 .custom-bullets li {
     position: relative; /* Allow bullet customization */
     margin-bottom: 10px;
-    padding-left: 30px; /* Space for the custom bullet */
+    padding-left: 10px; /* Space for the custom bullet */
 }
 
 .custom-bullets li::before {
