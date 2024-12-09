@@ -14,16 +14,18 @@
     <div class="container-fluid px-3">
         <!-- Banner -->
         <div class="position-relative mb-4">
-            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid">
-            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-                <h1 class="text-danger display-4 fw-bold">PAKDD GLFM</h1>
-                <h2 class="text-dark display-6 fw-light">2025</h2>
-            </div>
-            <div class="position-absolute bottom-0 end-0 text-end text-warning p-3">
-                <p class="fs-4 mb-0">June 10-13, 2025</p>
-                <p class="fs-5">Sydney, Australia</p>
-            </div>
+        <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <!-- 텍스트 크기를 반응형으로 변경 -->
+            <h1 class="text-danger fw-bold display-4 display-md-3 display-sm-5">PAKDD GLFM</h1>
+            <h2 class="text-dark fw-light display-6 display-md-5 display-sm-6">2025</h2>
         </div>
+        <div class="position-absolute bottom-0 end-0 text-end text-warning p-3">
+            <!-- 날짜 및 위치 텍스트 크기를 반응형으로 변경 -->
+            <p class="mb-0 fs-4 fs-md-5 fs-sm-6">June 10-13, 2025</p>
+            <p class="fs-5 fs-md-6 fs-sm-7">Sydney, Australia</p>
+        </div>
+</div>
 
         <!-- About Section -->
         <section class="mb-5">
@@ -236,7 +238,7 @@
     <style>
         .card-img-top {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
         }
 
