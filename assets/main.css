@@ -3,3 +3,31 @@
     width: 100%; /* 카드 폭에 맞춤 */
     height: 100px; /* 원하는 높이 */
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Adjust based on navbar height */
+}
+
+.nav-link:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Interactive hover effects */
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Print styles */
+@media print {
+    .navbar, .banner-image {
+        display: none;
+    }
+    .content-padding {
+        padding: 0;
+    }
+}

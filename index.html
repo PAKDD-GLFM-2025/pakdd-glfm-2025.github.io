@@ -4,34 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="assets/graph_icon.jpg" />
+    <link rel="shortcut icon" type="image/png" href="assets/network.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/main.css">
     <title>PAKDD 2025 GLFM Workshop Homepage</title>
 </head>
 
 <body>
-    <div class="container px-4 px-md-5"> 
-        <!-- Banner -->
-        <div class="position-relative mb-4" style="min-height: 400px;">
-            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid w-100 h-100" style="object-fit: cover;">
-        
-            <!-- PAKDD GLFM 텍스트 -->
-            <div class="position-absolute top-25 start-50 translate-middle text-center text-white" style="z-index: 1;">
-                <h1 class="text-danger fw-bold display-4 display-md-3 display-sm-5">PAKDD GLFM</h1>
-                <h2 class="text-dark fw-light display-6 display-md-5 display-sm-6">2025</h2>
+<!-- Add this right after <body> tag -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E3269;">
+        <div class="container">
+            <!-- Workshop Title/Logo -->
+            <a class="navbar-brand" href="#">
+                PAKDD-GLFM 2025
+            </a>
+    
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#call-for-papers">Call for Papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dates">Important Dates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#organizers">Organizers</a>
+                    </li>
+                </ul>
             </div>
-        
-            <!-- 날짜 및 위치 -->
-            <div class="position-absolute bottom-10 end-0 text-end text-warning p-3" style="z-index: 1;">
-                <p class="mb-0 fs-4 fs-md-5 fs-sm-6">June 10-13, 2025</p>
-                <p class="fs-5 fs-md-6 fs-sm-7">Sydney, Australia</p>
-            </div>
+        </div>
+    </nav>
+
+    <!-- Replace the banner div with this improved version -->
+    <div class="position-relative mb-4">
+        <!-- Make height responsive but with min/max constraints -->
+        <div style="height: min(40vh, 400px);">
+            <img src="assets/graph_banner.jpg" alt="Banner" 
+                class="img-fluid w-100 h-100 position-absolute" 
+                style="object-fit: cover; top: 0; left: 0;">
+        </div>
+
+        <<!-- Main title with better responsive classes and improved contrast -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center w-100" 
+        style="z-index: 2;">
+        <div class="px-3 py-4" style="background: rgba(0,0,0,0.7);">
+            <h1 class="text-white fw-bold mb-2">
+                <!-- For larger screens -->
+                <span class="display-4 d-none d-md-block">
+                    PAKDD Workshop on<br>
+                    Graph Learning with Foundation Models<br>
+                    <span class="text-warning">(PAKDD-GLFM)</span>
+                </span>
+                <!-- For mobile screens -->
+                <span class="display-5 d-md-none">
+                    PAKDD-GLFM<br>
+                    <span class="fs-6 text-light">Graph Learning with Foundation Models</span>
+                </span>
+            </h1>
+            <h2 class="text-warning fw-light mb-0">
+                <span class="display-5 d-none d-md-block">2025</span>
+                <span class="display-6 d-md-none">2025</span>
+            </h2>
+        </div>
+        </div>
+
+        <!-- Date and location with improved contrast -->
+        <div class="position-absolute bottom-0 end-0 text-end p-3" 
+            style="z-index: 2; background: rgba(0,0,0,0.5);">
+            <p class="mb-1 text-warning">
+                <span class="fs-4 d-none d-md-block">June 10-13, 2025</span>
+                <span class="fs-5 d-md-none">June 10-13, 2025</span>
+            </p>
+            <p class="text-warning mb-0">
+                <span class="fs-5 d-none d-md-block">Sydney, Australia</span>
+                <span class="fs-6 d-md-none">Sydney, Australia</span>
+            </p>
         </div>
     </div>
 
         <!-- About Section -->
-        <section class="mb-5">
+        <section id="about" class="mb-5">
             <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">About PAKDD-GLFM 2025</h2>
             <p>                
@@ -51,7 +116,7 @@
         </section>
 
         <!-- Call For Papers -->
-        <section class="mb-5">
+        <section id="call-for-papers" class="mb-5">
             <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Call For Papers</h2>
             <p>The <strong>scope</strong> of this workshop includes (but is not limited to):</p>
@@ -67,7 +132,7 @@
         </section>
 
         <!-- Important Dates -->
-        <section class="mb-5">
+        <section id="dates" class="mb-5">
             <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Important Dates</h2>
             <ul class="list-unstyled">
@@ -90,7 +155,7 @@
         </section>
 
         <!-- Program Schedule -->
-        <section class="mb-5">
+        <section id="schedule" class="mb-5">
             <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Program Schedule</h2>
             <table class="table table-striped">
@@ -118,7 +183,7 @@
         </section>
 
         <!-- Organizers -->
-        <section class="mb-5">
+        <section id="organizers" class="mb-5">
             <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Organizers</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -294,6 +359,48 @@
             }
         }
     </style>
+
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-light">About</a></li>
+                        <li><a href="#call-for-papers" class="text-light">Call for Papers</a></li>
+                        <li><a href="#dates" class="text-light">Important Dates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <p><i class="bi bi-envelope"></i> Email: pakdd.glfm.2025@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-globe"></i>
+                            <a href="https://pakdd2025.org/" target="_blank" class="text-light">PAKDD 2025 Main Conference</a>
+                        </li>
+                        <li class="mt-2">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <a href="#" class="text-light">Paper Submission Portal</a>
+                            <small class="d-block text-muted">(Coming Soon)</small>
+                        </li>
+                        <li class="mt-2">
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="text-light">Venue: Sydney, Australia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="text-center">
+                <p class="mb-0">© 2024-2025 PAKDD-GLFM Workshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
