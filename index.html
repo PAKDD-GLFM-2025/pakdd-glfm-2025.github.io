@@ -14,22 +14,23 @@
     <div class="container-fluid px-3">
         <!-- Banner -->
         <div class="position-relative mb-4">
-        <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid">
-        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-            <!-- 텍스트 크기를 반응형으로 변경 -->
-            <h1 class="text-danger fw-bold display-4 display-md-3 display-sm-5">PAKDD GLFM</h1>
-            <h2 class="text-dark fw-light display-6 display-md-5 display-sm-6">2025</h2>
-        </div>
-        <div class="position-absolute bottom-0 end-0 text-end text-warning p-3">
-            <!-- 날짜 및 위치 텍스트 크기를 반응형으로 변경 -->
-            <p class="mb-0 fs-4 fs-md-5 fs-sm-6">June 10-13, 2025</p>
-            <p class="fs-5 fs-md-6 fs-sm-7">Sydney, Australia</p>
+            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 1;">
+                <!-- 텍스트 크기를 반응형으로 변경 -->
+                <h1 class="text-danger fw-bold display-4 display-md-3 display-sm-5">PAKDD GLFM</h1>
+                <h2 class="text-dark fw-light display-6 display-md-5 display-sm-6">2025</h2>
+            </div>
+            <div class="position-absolute bottom-0 end-0 text-end text-warning p-3" style="z-index: 1;">
+                <!-- 날짜 및 위치 텍스트 크기를 반응형으로 변경 -->
+                <p class="mb-0 fs-4 fs-md-5 fs-sm-6">June 10-13, 2025</p>
+                <p class="fs-5 fs-md-6 fs-sm-7">Sydney, Australia</p>
+            </div>
         </div>
 </div>
 
         <!-- About Section -->
         <section class="mb-5">
-            <h2>About PAKDD-GLFM 2025</h2>
+            <h2 class="highlight-header">About PAKDD-GLFM 2025</h2>
             <p>                
               In <strong>PAKDD-GLFM 2025 (Workshop on Graph Learning with Foundation Models @ <a href="https://pakdd2025.org/" target="_blank">PAKDD 2025</a>)</strong>, we aim to bring together researchers and practitioners from academia and industry to discuss and advance the state-of-the-art in graph machine learning with foundation models.
             </p>
@@ -47,7 +48,7 @@
 
         <!-- Call For Papers -->
         <section class="mb-5">
-            <h2>Call For Papers</h2>
+            <h2 class="highlight-header">Call For Papers</h2>
             <p>The <strong>scope</strong> of this workshop includes (but is not limited to):</p>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>Theoretical foundation of GFMs:</strong> Understanding their ability to generalize and remain resilient.</li>
@@ -61,7 +62,7 @@
 
         <!-- Important Dates -->
         <section class="mb-5">
-            <h2>Important Dates</h2>
+            <h2 class="highlight-header">Important Dates</h2>
             <ul class="list-unstyled">
                 <li><strong>Workshop Paper Deadline:</strong> February 22, 2025</li>
                 <li><strong>Acceptance Notification:</strong> March 15, 2025</li>
@@ -71,7 +72,7 @@
         </section>
 
         <section>
-            <h2 class="mt-5">Submission Instructions</h2>
+            <h2 class="highlight-header">Submission Instructions</h2>
             <div class="alert alert-info mt-3" role="alert">
                 <p>
                     Submission guidelines will be available soon on the official conference website. Authors are encouraged to prepare their papers using the provided template and adhere to the submission deadlines.
@@ -81,7 +82,7 @@
 
         <!-- Program Schedule -->
         <section class="mb-5">
-            <h2>Program Schedule</h2>
+            <h2 class="highlight-header">Program Schedule</h2>
             <table class="table table-striped">
                 <thead class="table-dark">
                     <tr>
@@ -107,7 +108,7 @@
 
         <!-- Organizers -->
         <section class="mb-5">
-            <h2 class="mb-4">Organizers</h2>
+            <h2 class="highlight-header">Organizers</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <!-- Organizer 1 -->
                 <div class="col">
@@ -244,6 +245,18 @@
 
         body {
             font-family: Arial, sans-serif;
+        }
+        
+        .highlight-header {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+            color: #ffffff;
+            background-color: #1E3269; /* 박스 배경색 */
+            padding: 10px 15px;
+            border-radius: 8px; /* 둥근 모서리 */
+            text-transform: capitalize;
+            margin-bottom: 20px;
         }
     </style>
 </body>
