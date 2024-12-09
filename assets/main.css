@@ -179,6 +179,30 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
     margin-bottom: 5px;
 }
 
+/* Custom bullet styling */
+.custom-bullets {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px; /* Add some padding to indent */
+}
+
+.custom-bullets li {
+    position: relative; /* Allow bullet customization */
+    margin-bottom: 10px;
+    padding-left: 30px; /* Space for the custom bullet */
+}
+
+.custom-bullets li::before {
+    content: "●"; /* Custom bullet, you can replace with other symbols like "◆", "✓", etc. */
+    position: absolute;
+    left: 0; /* Position bullet at the start */
+    font-size: 0.2em; /* Adjust bullet size */
+    color: #000000; /* Color for the bullet (matches PAKDD style) */
+    line-height: 1; /* Align bullet with text */
+   top: 0.8em;
+}
+
+
+
 /* Sponsor Images */
 table.sponsors{width:800px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
