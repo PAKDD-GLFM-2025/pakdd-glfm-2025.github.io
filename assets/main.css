@@ -180,6 +180,14 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
 }
 
 /* Custom bullet styling */
+ul.custom-list {
+    line-height: 1.8; /* Adjust the number to control spacing */
+    padding-left: 20px; /* Add indentation for list items */
+}
+
+ul.custom-list li {
+    margin-bottom: 10px; /* Space between each list item */
+}
 .custom-bullets {
     list-style-type: none; /* Remove default bullets */
     padding-left: 20px; /* Add some padding to indent */
@@ -195,10 +203,10 @@ td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center
     content: "●"; /* Custom bullet, you can replace with other symbols like "◆", "✓", etc. */
     position: absolute;
     left: 0; /* Position bullet at the start */
-    font-size: 0.2em; /* Adjust bullet size */
+    font-size: 0.1em; /* Adjust bullet size */
     color: #000000; /* Color for the bullet (matches PAKDD style) */
     line-height: 1; /* Align bullet with text */
-   top: 0.8em;
+   top: 1.0em;
 }
 
 
