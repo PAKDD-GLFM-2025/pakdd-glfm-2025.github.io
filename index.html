@@ -11,20 +11,20 @@
 </head>
 
 <body>
-<!-- Add this right after <body> tag -->
+    <!-- Add this right after <body> tag -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E3269;">
         <div class="container">
             <!-- Workshop Title/Logo -->
             <a class="navbar-brand" href="#">
                 PAKDD-GLFM 2025
             </a>
-    
+
             <!-- Mobile Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -55,243 +55,341 @@
     <div class="position-relative mb-4">
         <!-- Make height responsive but with min/max constraints -->
         <div style="height: min(40vh, 400px);">
-            <img src="assets/graph_banner.jpg" alt="Banner" 
-                class="img-fluid w-100 h-100 position-absolute" 
+            <img src="assets/graph_banner.jpg" alt="Banner" class="img-fluid w-100 h-100 position-absolute"
                 style="object-fit: cover; top: 0; left: 0;">
         </div>
 
         <<!-- Main title with better responsive classes and improved contrast -->
-        <div class="position-absolute top-50 start-50 translate-middle text-center w-100" 
-        style="z-index: 2;">
-        <div class="px-3 py-4" style="background: rgba(0,0,0,0.7);">
-            <h1 class="text-white fw-bold mb-2">
-                <!-- For larger screens -->
-                <span class="display-4 d-none d-md-block">
-                    PAKDD Workshop on<br>
-                    Graph Learning with Foundation Models<br>
-                    <span class="text-warning">(PAKDD-GLFM)</span>
-                </span>
-                <!-- For mobile screens -->
-                <span class="display-5 d-md-none">
-                    PAKDD-GLFM<br>
-                    <span class="fs-6 text-light">Graph Learning with Foundation Models</span>
-                </span>
-            </h1>
-            <h2 class="text-warning fw-light mb-0">
-                <span class="display-5 d-none d-md-block">2025</span>
-                <span class="display-6 d-md-none">2025</span>
-            </h2>
-        </div>
-        </div>
-
-        <!-- Date and location with improved contrast -->
-        <div class="position-absolute bottom-0 end-0 text-end p-3" 
-            style="z-index: 2; background: rgba(0,0,0,0.5);">
-            <p class="mb-1 text-warning">
-                <span class="fs-4 d-none d-md-block">June 10-13, 2025</span>
-                <span class="fs-5 d-md-none">June 10-13, 2025</span>
-            </p>
-            <p class="text-warning mb-0">
-                <span class="fs-5 d-none d-md-block">Sydney, Australia</span>
-                <span class="fs-6 d-md-none">Sydney, Australia</span>
-            </p>
-        </div>
-    </div>
-
-        <!-- About Section -->
-        <section id="about" class="mb-5">
-            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
-            <h2 class="highlight-header">About PAKDD-GLFM 2025</h2>
-            <div class="section-content">
-            <p>
-              In <strong>PAKDD-GLFM 2025 (Workshop on Graph Learning with Foundation Models @ <a href="https://pakdd2025.org/" target="_blank">PAKDD 2025</a>)</strong>, we aim to bring together researchers and practitioners from academia and industry to discuss and advance the state-of-the-art in graph machine learning with foundation models.
-            </p>
-            <p>
-                Graph Foundation Models (GFMs) represent a cutting-edge approach in graph machine learning that integrates the power of large-scale foundation models with graph structures.
-                Specifically, GFMs are designed to effectively capture complex relationships and dependencies present in graph-structured data, such as social networks, biological networks, and knowledge graphs.
-                By learning from diverse and extensive graph data, GFMs show emergent capabilities that significantly enhance performance across various, even unseen, downstream tasks, such as node/graph classification and 
-                link prediction.
-            </p>
-            <p>
-                As graphs continue to be a powerful tool for modeling real-world interactions, the development of GFMs is becoming increasingly important with real-world applications spanning diverse fields, including detecting anomalies in social networks, drug discovery through graph-based molecular classification, enhancing recommendation systems for personalized content, and strengthening cybersecurity by identifying vulnerabilities in network structures.
-                Again, the emergent capabilities of GFMs allow them to adapt to new applications, generalizing across diverse domains and uncovering insights beyond the reach of traditional models.        
-            </p> 
-            </div>
-            </div>
-        </section>
-
-        <!-- Call For Papers -->
-        <section id="call-for-papers" class="mb-5">
-            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
-            <h2 class="highlight-header">Call For Papers</h2>
-            <div class="section-content">
-            <p>The <strong>scope</strong> of this workshop includes (but is not limited to):</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><strong>Theoretical foundation of GFMs:</strong> Understanding their ability to generalize and remain resilient.</li>
-                <li class="list-group-item"><strong>Building blocks of GFMs:</strong> Exploring the structural components that underpin graph foundation models.</li>
-                <li class="list-group-item"><strong>Empirical analysis:</strong> Evaluation across tasks and datasets, identifying limitations.</li>
-                <li class="list-group-item"><strong>Large-scale pre-training:</strong> Techniques to reduce computational costs while maintaining performance.</li>
-                <li class="list-group-item"><strong>Fine-tuning and adaptation:</strong> Techniques for improving performance on target tasks.</li>
-                <li class="list-group-item"><strong>Multi-modality in graph tasks:</strong> Integration of multi-modal data.</li>
-                <li class="list-group-item"><strong>LLM + Graph learning:</strong> Combining large language models with graph learning to unlock new capabilities and applications.</li>
-                <li class="list-group-item"><strong>New applications:</strong> Leveraging emergent capabilities for real-world scenarios.</li>
-            </ul>
-            </div>
-            </div>
-        </section>
-
-        <!-- Important Dates -->
-        <section id="dates" class="mb-5">
-            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
-            <h2 class="highlight-header">Important Dates</h2>
-            <div class="section-content">
-            <ul class="list-unstyled">
-                <li><strong>Workshop Paper Deadline:</strong> <span style="color: red; font-weight: bold;">March 9, 2025</span> <span style="color: red;">(Extended!)</span></li>
-                <li><strong>Acceptance Notification:</strong> March 15, 2025</li>
-                <li><strong>Camera-ready Submission:</strong> March 29, 2025</li>
-                <li><i>All deadlines are 23:59 Pacific Standard Time (PST).</i></li>
-            </ul>
-            </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
-            <h2 class="highlight-header">Submission Instructions</h2>
-            <div class="section-content">
-            <!-- <div class="alert alert-info mt-3" role="alert"> -->
-                <p>                    
-                    <!-- Submission guidelines will be available soon on the official conference website. Authors are encouraged to prepare their papers using the provided template and adhere to the submission deadlines. -->
-
-                    <ul class="list-unstyled">
-                        <li><strong>Submission cite:</strong> <a href="https://cmt3.research.microsoft.com/GLFM2025" target="_blank">https://cmt3.research.microsoft.com/GLFM2025</a></li>
-                        <li><strong>Submission format:</strong> Springer LNCS/LNAI manuscript submission guidelines and formatting template (<a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a>)</li>
-                        <li><strong>Submission length:</strong> Accepting full papers (up to 12 pages, including references and appendices) and shorter papers </li>
-                        <li><strong>How to submit:</strong> <a href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html" target="_blank">https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html</a></li>                        
-                    </ul>
-                    <p>
-                    Paper submission must be in English. All papers will be double-blind reviewed by the Program Committee based on technical quality, relevance to the GLFM workshop, originality, significance, and presentation quality. All paper submissions will be handled electronically. The author list and order cannot be changed after the paper is submitted. Papers that do not comply with the Submission Policy will be rejected without review.
-                    </p>
-                    <p>
-                    Each submitted paper must include an abstract up to 200 words. Each submitted paper must be no longer than 12 pages (including references, appendices, etc.). Authors must use Springer LNCS/LNAI manuscript submission guidelines and formatting template (<a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a>) for their submissions. All papers must be submitted electronically through the GLFM's CMT paper submission system (<a href="https://cmt3.research.microsoft.com/GLFM2025" target="_blank">https://cmt3.research.microsoft.com/GLFM2025</a>) in PDF format only.
-                    </p>
-                    <p>
-                    GLFM 2025 will not accept any paper that, at the time of submission, is under review for, has already been published in, or has already been accepted for publication in a journal or another venue with formally published proceedings. Authors are also required not to submit their papers to other venues with formal publication during the GLFM 2025 review period. Papers on arXiv do not violate this rule as long as the submitted paper does not cite them.
-                    </p>
-                    <p>
-                    <strong>Proceedings and Publication:</strong> All accepted papers will be published in the official workshop proceedings volume via Springer LNCS/LNAI. Authors of accepted papers will have their contributions included in this volume. By submitting a paper, authors agree to have their paper published in the proceedings if it is accepted.
-                    </p>
-                    <p>
-                    <strong>Acknowledgment:</strong> The Microsoft CMT (<a href="https://cmt3.research.microsoft.com/" target="_blank">https://cmt3.research.microsoft.com/</a>) service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-                    </p>
-                </p>
-            <!-- </div> -->
-            </div>
-            </div>
-        </section>
-
-        <!-- Program Schedule -->
-        <section id="schedule" class="mb-5">
-            <div class="content-padding">
-                <h2 class="highlight-header">Program Schedule</h2>
-                <div class="section-content">
-        
-                    <p><strong>Date:</strong> June 10, 2025<br>
-                       <strong>Location:</strong> Boardroom (Third floor), Sydney Masonic Centre </p>
-        
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Session</th>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>13:30 - 13:35</td>
-                                <td>Opening Remarks</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>13:35 - 14:10</td>
-                                <td><a href="#keynote1" class="text-decoration-none">Keynote Talk 1</a></td>
-                                <td><strong>Vagelis Papalexakis</strong> (University of California Riverside)<br>
-                                    <em>It’s all about the latent structure: Tensor and graph methods for actionable insights</em></td>
-                            </tr>
-                            <tr>
-                                <td>14:10 - 15:00</td>
-                                <td>Invited Talks</td>
-                                <td>
-                                    - Probabilistic Circuits for Graph-Based PU-Learning – A Work in Progress<br>
-                                    - Closed-Form Node Classifier on Hypergraphs<br>
-                                    - Oldie but Goodie: Re-illuminating Label Propagation on Graphs with Partially Observed Features
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>15:00 - 15:30</td>
-                                <td>Coffee Break</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>15:35 - 16:10</td>
-                                <td>Keynote Talk 2</td>
-                                <td><strong>Junbin Gao</strong> (University of Sydney)<br>
-                                    <em>Title: TBD</em></td>
-                            </tr>
-                            <tr>
-                                <td>16:10 - 17:10</td>
-                                <td>Regular Workshop Papers</td>
-                                <td>
-                                    - Graph Generative Models Evaluation with Masked Autoencoder<br>
-                                    - Adaptive Context-Aware GCN for Aspect-Based Sentiment Analysis<br>
-                                    - Investigating the Limits of Graph Foundation Model in Real-World Travel Recommendation Systems <br>
-                                    - FedCIPP: Full-Lifecycle IP Protection for Federated Learning<br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100" style="z-index: 2;">
+                <div class="px-3 py-4" style="background: rgba(0,0,0,0.7);">
+                    <h1 class="text-white fw-bold mb-2">
+                        <!-- For larger screens -->
+                        <span class="display-4 d-none d-md-block">
+                            PAKDD Workshop on<br>
+                            Graph Learning with Foundation Models<br>
+                            <span class="text-warning">(PAKDD-GLFM)</span>
+                        </span>
+                        <!-- For mobile screens -->
+                        <span class="display-5 d-md-none">
+                            PAKDD-GLFM<br>
+                            <span class="fs-6 text-light">Graph Learning with Foundation Models</span>
+                        </span>
+                    </h1>
+                    <h2 class="text-warning fw-light mb-0">
+                        <span class="display-5 d-none d-md-block">2025</span>
+                        <span class="display-6 d-md-none">2025</span>
+                    </h2>
                 </div>
             </div>
-        </div>
-        </section>
-    
-        <!-- Keynote 1 Detail -->
-        <section id="keynote1" class="mb-5">
-            <div class="content-padding">
-                <h2 class="highlight-header">Keynote Talk 1 Details</h2>
-                <p><strong>Speaker:</strong> Evangelos (Vagelis) Papalexakis<br>
-                   <strong>Affiliation:</strong> University of California Riverside<br>
-                   <strong>Time:</strong> June 10, 2025 – 13:35 to 14:10<br>
-                   <strong>Title:</strong> <em>It’s all about the latent structure: Tensor and graph methods for actionable insights</em></p>
-        
-                <h4>Abstract</h4>
-                <p>
-                    Tensors and graphs have been essential tools in expressing complex relations in data. Of particular interest are tensor and graph mining methods that allow us to uncover the latent structure of the data, and as a result produce interpretable representations of the data that can be used for a number of downstream tasks and for generating actionable insights.
+
+            <!-- Date and location with improved contrast -->
+            <div class="position-absolute bottom-0 end-0 text-end p-3" style="z-index: 2; background: rgba(0,0,0,0.5);">
+                <p class="mb-1 text-warning">
+                    <span class="fs-4 d-none d-md-block">June 10-13, 2025</span>
+                    <span class="fs-5 d-md-none">June 10-13, 2025</span>
                 </p>
-                <p>
-                    In this talk, we will first explore how tensor methods can supercharge graph and data mining, by showing exciting examples including community detection. Subsequently, we are going to present novel self-supervised graph representation learning methods which rely on uncovering the latent structure of the data in achieving high performance and speedup over existing state of the art. Finally, if time allows, we are going to briefly discuss fascinating connections between latent structure recovery and robustness of deep learning models.
-                </p>
-        
-                <h4>Speaker Bio</h4>
-                <p>
-                    Evangelos (Vagelis) Papalexakis is an Associate Professor and the Ross Family Chair of the CSE Dept. at University of California Riverside.  He received his PhD degree at the School of Computer Science at Carnegie Mellon University (CMU). Prior to CMU, he obtained his Diploma and MSc in Electronic & Computer Engineering at the Technical University of Crete, in Greece. Broadly, his research interests span the fields of Data Science, Machine Learning, Artificial Intelligence, and Signal Processing.
-                </p>
-                <p>
-                    His research involves designing interpretable models and scalable algorithms for extracting knowledge from large multi-aspect datasets, with specific emphasis on tensor factorization models, and applying those algorithms to a variety of real-world problems, including AI for Science, explainable AI, gravitational wave detection, cybersecurity, transportation and railway safety, and precision agriculture.
-                </p>
-                <p>
-                    He is heavily involved in the data science research community with extensive experience in conference organization, including organizing a workshop at ACM SIGKDD 2019 on "Tensor Methods for Emerging Data Science Problems", being the Deep Learning Day Co-Chair for ACM SIGKDD 2019, the Doctoral Forum Co-Chair for SIAM SDM 2021, the Demos Co-Chair for ACM WSDM 2022, the Program Co-Chair for SIAM SDM 2022, and the General Co-Chair for SIAM SDM 2024 and SIAM SDM 2025. 
-                </p>
-                <p>
-                    His work has appeared in top-tier conferences and journals, and has attracted a number of distinctions, including the 2017 SIGKDD Dissertation Award (runner-up), a number of paper awards, the National Science Foundation CAREER award, the 2021 IEEE DSAA Next Generation Data Scientist Award, the 2022 IEEE Signal Processing Society Donald G. Fink Overview Paper Award, and the IEEE ICDM 2022 Tao Li Award and 2025 PAKDD Early Career Research Award, both of which award excellence in early-career researchers in data mining. 
+                <p class="text-warning mb-0">
+                    <span class="fs-5 d-none d-md-block">Sydney, Australia</span>
+                    <span class="fs-6 d-md-none">Sydney, Australia</span>
                 </p>
             </div>
-        </section>
+    </div>
 
-        <!-- Organizers -->
-        <section id="organizers" class="mb-5">
-            <div class="content-padding"> <!-- 내용에 패딩 추가 -->
+    <!-- About Section -->
+    <section id="about" class="mb-5">
+        <div class="content-padding"> <!-- 내용에 패딩 추가 -->
+            <h2 class="highlight-header">About PAKDD-GLFM 2025</h2>
+            <div class="section-content">
+                <p>
+                    In <strong>PAKDD-GLFM 2025 (Workshop on Graph Learning with Foundation Models @ <a
+                            href="https://pakdd2025.org/" target="_blank">PAKDD 2025</a>)</strong>, we aim to bring
+                    together researchers and practitioners from academia and industry to discuss and advance the
+                    state-of-the-art in graph machine learning with foundation models.
+                </p>
+                <p>
+                    Graph Foundation Models (GFMs) represent a cutting-edge approach in graph machine learning that
+                    integrates the power of large-scale foundation models with graph structures.
+                    Specifically, GFMs are designed to effectively capture complex relationships and dependencies
+                    present in graph-structured data, such as social networks, biological networks, and knowledge
+                    graphs.
+                    By learning from diverse and extensive graph data, GFMs show emergent capabilities that
+                    significantly enhance performance across various, even unseen, downstream tasks, such as node/graph
+                    classification and
+                    link prediction.
+                </p>
+                <p>
+                    As graphs continue to be a powerful tool for modeling real-world interactions, the development of
+                    GFMs is becoming increasingly important with real-world applications spanning diverse fields,
+                    including detecting anomalies in social networks, drug discovery through graph-based molecular
+                    classification, enhancing recommendation systems for personalized content, and strengthening
+                    cybersecurity by identifying vulnerabilities in network structures.
+                    Again, the emergent capabilities of GFMs allow them to adapt to new applications, generalizing
+                    across diverse domains and uncovering insights beyond the reach of traditional models.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call For Papers -->
+    <section id="call-for-papers" class="mb-5">
+        <div class="content-padding"> <!-- 내용에 패딩 추가 -->
+            <h2 class="highlight-header">Call For Papers</h2>
+            <div class="section-content">
+                <p>The <strong>scope</strong> of this workshop includes (but is not limited to):</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Theoretical foundation of GFMs:</strong> Understanding their
+                        ability to generalize and remain resilient.</li>
+                    <li class="list-group-item"><strong>Building blocks of GFMs:</strong> Exploring the structural
+                        components that underpin graph foundation models.</li>
+                    <li class="list-group-item"><strong>Empirical analysis:</strong> Evaluation across tasks and
+                        datasets, identifying limitations.</li>
+                    <li class="list-group-item"><strong>Large-scale pre-training:</strong> Techniques to reduce
+                        computational costs while maintaining performance.</li>
+                    <li class="list-group-item"><strong>Fine-tuning and adaptation:</strong> Techniques for improving
+                        performance on target tasks.</li>
+                    <li class="list-group-item"><strong>Multi-modality in graph tasks:</strong> Integration of
+                        multi-modal data.</li>
+                    <li class="list-group-item"><strong>LLM + Graph learning:</strong> Combining large language models
+                        with graph learning to unlock new capabilities and applications.</li>
+                    <li class="list-group-item"><strong>New applications:</strong> Leveraging emergent capabilities for
+                        real-world scenarios.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section id="dates" class="mb-5">
+        <div class="content-padding"> <!-- 내용에 패딩 추가 -->
+            <h2 class="highlight-header">Important Dates</h2>
+            <div class="section-content">
+                <ul class="list-unstyled">
+                    <li><strong>Workshop Paper Deadline:</strong> <span style="color: red; font-weight: bold;">March 9,
+                            2025</span> <span style="color: red;">(Extended!)</span></li>
+                    <li><strong>Acceptance Notification:</strong> March 15, 2025</li>
+                    <li><strong>Camera-ready Submission:</strong> March 29, 2025</li>
+                    <li><i>All deadlines are 23:59 Pacific Standard Time (PST).</i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content-padding"> <!-- 내용에 패딩 추가 -->
+            <h2 class="highlight-header">Submission Instructions</h2>
+            <div class="section-content">
+                <!-- <div class="alert alert-info mt-3" role="alert"> -->
+                <p>
+                    <!-- Submission guidelines will be available soon on the official conference website. Authors are encouraged to prepare their papers using the provided template and adhere to the submission deadlines. -->
+
+                <ul class="list-unstyled">
+                    <li><strong>Submission cite:</strong> <a href="https://cmt3.research.microsoft.com/GLFM2025"
+                            target="_blank">https://cmt3.research.microsoft.com/GLFM2025</a></li>
+                    <li><strong>Submission format:</strong> Springer LNCS/LNAI manuscript submission guidelines and
+                        formatting template (<a
+                            href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                            target="_blank">https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a>)
+                    </li>
+                    <li><strong>Submission length:</strong> Accepting full papers (up to 12 pages, including references
+                        and appendices) and shorter papers </li>
+                    <li><strong>How to submit:</strong> <a
+                            href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
+                            target="_blank">https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html</a>
+                    </li>
+                </ul>
+                <p>
+                    Paper submission must be in English. All papers will be double-blind reviewed by the Program
+                    Committee based on technical quality, relevance to the GLFM workshop, originality, significance, and
+                    presentation quality. All paper submissions will be handled electronically. The author list and
+                    order cannot be changed after the paper is submitted. Papers that do not comply with the Submission
+                    Policy will be rejected without review.
+                </p>
+                <p>
+                    Each submitted paper must include an abstract up to 200 words. Each submitted paper must be no
+                    longer than 12 pages (including references, appendices, etc.). Authors must use Springer LNCS/LNAI
+                    manuscript submission guidelines and formatting template (<a
+                        href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                        target="_blank">https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines</a>)
+                    for their submissions. All papers must be submitted electronically through the GLFM's CMT paper
+                    submission system (<a href="https://cmt3.research.microsoft.com/GLFM2025"
+                        target="_blank">https://cmt3.research.microsoft.com/GLFM2025</a>) in PDF format only.
+                </p>
+                <p>
+                    GLFM 2025 will not accept any paper that, at the time of submission, is under review for, has
+                    already been published in, or has already been accepted for publication in a journal or another
+                    venue with formally published proceedings. Authors are also required not to submit their papers to
+                    other venues with formal publication during the GLFM 2025 review period. Papers on arXiv do not
+                    violate this rule as long as the submitted paper does not cite them.
+                </p>
+                <p>
+                    <strong>Proceedings and Publication:</strong> All accepted papers will be published in the official
+                    workshop proceedings volume via Springer LNCS/LNAI. Authors of accepted papers will have their
+                    contributions included in this volume. By submitting a paper, authors agree to have their paper
+                    published in the proceedings if it is accepted.
+                </p>
+                <p>
+                    <strong>Acknowledgment:</strong> The Microsoft CMT (<a href="https://cmt3.research.microsoft.com/"
+                        target="_blank">https://cmt3.research.microsoft.com/</a>) service was used for managing the
+                    peer-reviewing process for this conference. This service was provided for free by Microsoft and they
+                    bore all expenses, including costs for Azure cloud services as well as for software development and
+                    support.
+                </p>
+                </p>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Schedule -->
+    <section id="schedule" class="mb-5">
+        <div class="content-padding">
+            <h2 class="highlight-header">Program Schedule</h2>
+            <div class="section-content">
+                <p class="alert alert-info">
+                    The PAKDD-GLFM 2025 workshop will feature keynote talks from leading researchers, invited talks, and paper presentations covering the latest advances in graph learning with foundation models. Each paper presentation will include time for Q&A.
+                </p>
+
+                <p><strong>Date:</strong> June 10, 2025<br>
+                    <strong>Location:</strong> Boardroom (Third floor), Sydney Masonic Centre
+                </p>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13:30 - 13:40</td>
+                            <td>Opening Remarks</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13:40 - 14:15</td>
+                            <td><a href="#keynote1" class="text-decoration-none">Keynote Talk 1</a></td>
+                            <td>
+                                <strong>Evangelos (Vagelis) Papalexakis</strong><br>
+                                <small class="text-muted">University of California Riverside</small><br>
+                                <em>It's all about the latent structure: Tensor and graph methods for actionable insights</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14:15 - 15:00</td>
+                            <td>Invited Talks</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">14:15-14:30</span> <strong>Probabilistic Circuits for Graph-Based PU-Learning</strong><br>
+                                        <small class="text-muted">Sagad Hamid, Tanya Braun, and Jaemin Yoo</small></li>
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">14:30-14:45</span> <strong>Closed-Form Node Classifier on Hypergraphs</strong><br>
+                                        <small class="text-muted">Chaewoon Bae, Jaehyun Lee, and Jaemin Yoo</small></li>
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">14:45-15:00</span> <strong>Oldie but Goodie: Re-illuminating Label Propagation on Graphs with Partially Observed Features</strong><br>
+                                        <small class="text-muted">Sukwon Yun, Xin Liu, Yunhak Oh, Junseok Lee, Sungwon Kim, Tianlong Chen, Tsuyoshi Murata, and Chanyoung Park</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:00 - 15:30</td>
+                            <td>Coffee Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15:35 - 16:10</td>
+                            <td>Keynote Talk 2</td>
+                            <td>
+                                <strong>Junbin Gao</strong><br>
+                                <small class="text-muted">University of Sydney</small><br>
+                                <em>Title: TBD</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:10 - 17:10</td>
+                            <td>Regular Workshop Papers</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">16:10-16:25</span> <strong>Graph Generative Models Evaluation with Masked Autoencoder</strong><br>
+                                        <small class="text-muted">Chengen Wang and Murat Kantarcioglu</small></li>
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">16:25-16:40</span> <strong>Investigating the Limits of Graph Foundation Model in Real-World Travel Recommendation Systems</strong><br>
+                                        <small class="text-muted">Nayoung Lee, Gunmin Lee, and Donghun Lee</small></li>
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">16:40-16:55</span> <strong>Adaptive Context-Aware GCN for Aspect-Based Sentiment Analysis</strong><br>
+                                        <small class="text-muted">Jianhua Chi and Xianguo Zhang</small></li>
+                                    <li class="mb-2"><span class="badge bg-secondary me-2">16:55-17:10</span> <strong>FedCIPP: Full-Lifecycle IP Protection for Federated Learning</strong><br>
+                                        <small class="text-muted">Junjie He, Xianyi Chen, Jiangfeng Qian, Xuebo Wang, and Hui Mi</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Keynote 1 Detail -->
+    <section id="keynote1" class="mb-5">
+        <div class="content-padding">
+            <h2 class="highlight-header">Keynote Talk 1 Details</h2>
+            <p><strong>Speaker:</strong> Evangelos (Vagelis) Papalexakis<br>
+                <strong>Affiliation:</strong> University of California Riverside<br>
+                <strong>Time:</strong> June 10, 2025 - 13:40 to 14:15<br>
+                <strong>Title:</strong> <em>It's all about the latent structure: Tensor and graph methods for actionable
+                    insights</em>
+            </p>
+
+            <h4>Abstract</h4>
+            <p>
+                Tensors and graphs have been essential tools in expressing complex relations in data. Of particular
+                interest are tensor and graph mining methods that allow us to uncover the latent structure of the data,
+                and as a result produce interpretable representations of the data that can be used for a number of
+                downstream tasks and for generating actionable insights.
+            </p>
+            <p>
+                In this talk, we will first explore how tensor methods can supercharge graph and data mining, by showing
+                exciting examples including community detection. Subsequently, we are going to present novel
+                self-supervised graph representation learning methods which rely on uncovering the latent structure of
+                the data in achieving high performance and speedup over existing state of the art. Finally, if time
+                allows, we are going to briefly discuss fascinating connections between latent structure recovery and
+                robustness of deep learning models.
+            </p>
+
+            <h4>Speaker Bio</h4>
+            <p>
+                Evangelos (Vagelis) Papalexakis is an Associate Professor and the Ross Family Chair of the CSE Dept. at
+                University of California Riverside. He received his PhD degree at the School of Computer Science at
+                Carnegie Mellon University (CMU). Prior to CMU, he obtained his Diploma and MSc in Electronic & Computer
+                Engineering at the Technical University of Crete, in Greece. Broadly, his research interests span the
+                fields of Data Science, Machine Learning, Artificial Intelligence, and Signal Processing.
+            </p>
+            <p>
+                His research involves designing interpretable models and scalable algorithms for extracting knowledge
+                from large multi-aspect datasets, with specific emphasis on tensor factorization models, and applying
+                those algorithms to a variety of real-world problems, including AI for Science, explainable AI,
+                gravitational wave detection, cybersecurity, transportation and railway safety, and precision
+                agriculture.
+            </p>
+            <p>
+                He is heavily involved in the data science research community with extensive experience in conference
+                organization, including organizing a workshop at ACM SIGKDD 2019 on "Tensor Methods for Emerging Data
+                Science Problems", being the Deep Learning Day Co-Chair for ACM SIGKDD 2019, the Doctoral Forum Co-Chair
+                for SIAM SDM 2021, the Demos Co-Chair for ACM WSDM 2022, the Program Co-Chair for SIAM SDM 2022, and the
+                General Co-Chair for SIAM SDM 2024 and SIAM SDM 2025.
+            </p>
+            <p>
+                His work has appeared in top-tier conferences and journals, and has attracted a number of distinctions,
+                including the 2017 SIGKDD Dissertation Award (runner-up), a number of paper awards, the National Science
+                Foundation CAREER award, the 2021 IEEE DSAA Next Generation Data Scientist Award, the 2022 IEEE Signal
+                Processing Society Donald G. Fink Overview Paper Award, and the IEEE ICDM 2022 Tao Li Award and 2025
+                PAKDD Early Career Research Award, both of which award excellence in early-career researchers in data
+                mining.
+            </p>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="mb-5">
+        <div class="content-padding"> <!-- 내용에 패딩 추가 -->
             <h2 class="highlight-header">Organizers</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
                 <!-- Organizer 1 -->
@@ -341,7 +439,8 @@
                             <h5 class="card-title">Chanyoung Park</h5>
                             <p><strong>Assistant Professor</strong><br>KAIST</p>
                             <p>Email: <a href="mailto:cy.park@kaist.ac.kr">cy.park@kaist.ac.kr</a></p>
-                            <a href="https://dsail.kaist.ac.kr/professor/" target="_blank" class="btn btn-primary">Website</a>
+                            <a href="https://dsail.kaist.ac.kr/professor/" target="_blank"
+                                class="btn btn-primary">Website</a>
                         </div>
                     </div>
                 </div>
@@ -411,50 +510,52 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section id="pc-members" class="mb-5">
-            <div class="content-padding">
-                <h2 class="highlight-header">PC Members</h2>
-                <div class="section-content">
-                    <p>We sincerely appreciate the valuable contributions of our reviewers who helped ensure the quality of submissions.</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Minyoung Choe (KAIST)</li>
-                        <li class="list-group-item">Yeonjun In (KAIST)</li>
-                        <li class="list-group-item">Jiaxin Ju (Griffith University)</li>
-                        <li class="list-group-item">Shinhwan Kang (KAIST)</li>
-                        <li class="list-group-item">Kibum Kim (KAIST)</li>
-                        <li class="list-group-item">Sein Kim (KAIST)</li>
-                        <li class="list-group-item">Sunwoo Kim (KAIST)</li>
-                        <li class="list-group-item">Huan Yee Koh (Monash University)</li>
-                        <li class="list-group-item">Soo Yong Lee (KAIST)</li>
-                        <li class="list-group-item">Geon Lee (KAIST)</li>
-                        <li class="list-group-item">Jongha Lee (KAIST)</li>
-                        <li class="list-group-item">Namkyeong Lee (KAIST)</li>
-                        <li class="list-group-item">Langzhang Liang (KAIST)</li>
-                        <li class="list-group-item">Linhao Luo (Monash University)</li>
-                        <li class="list-group-item">Sangwoo Seo (KAIST)</li>
-                        <li class="list-group-item">Yuan Sui (National University of Singapore)</li>
-                        <li class="list-group-item">Zhangchi Qiu (Griffith University)</li>
-                        <li class="list-group-item">Kanghoon Yoon (KAIST)</li>
-                        <li class="list-group-item">Zicheng Zhao (Nanjing University of Science and Technology)</li>
-                    </ul>
-                </div>
+    <section id="pc-members" class="mb-5">
+        <div class="content-padding">
+            <h2 class="highlight-header">PC Members</h2>
+            <div class="section-content">
+                <p>We sincerely appreciate the valuable contributions of our reviewers who helped ensure the quality of
+                    submissions.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Minyoung Choe (KAIST)</li>
+                    <li class="list-group-item">Yeonjun In (KAIST)</li>
+                    <li class="list-group-item">Jiaxin Ju (Griffith University)</li>
+                    <li class="list-group-item">Shinhwan Kang (KAIST)</li>
+                    <li class="list-group-item">Kibum Kim (KAIST)</li>
+                    <li class="list-group-item">Sein Kim (KAIST)</li>
+                    <li class="list-group-item">Sunwoo Kim (KAIST)</li>
+                    <li class="list-group-item">Huan Yee Koh (Monash University)</li>
+                    <li class="list-group-item">Soo Yong Lee (KAIST)</li>
+                    <li class="list-group-item">Geon Lee (KAIST)</li>
+                    <li class="list-group-item">Jongha Lee (KAIST)</li>
+                    <li class="list-group-item">Namkyeong Lee (KAIST)</li>
+                    <li class="list-group-item">Langzhang Liang (KAIST)</li>
+                    <li class="list-group-item">Linhao Luo (Monash University)</li>
+                    <li class="list-group-item">Sangwoo Seo (KAIST)</li>
+                    <li class="list-group-item">Yuan Sui (National University of Singapore)</li>
+                    <li class="list-group-item">Zhangchi Qiu (Griffith University)</li>
+                    <li class="list-group-item">Kanghoon Yoon (KAIST)</li>
+                    <li class="list-group-item">Zicheng Zhao (Nanjing University of Science and Technology)</li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="acknowledgments" class="mb-5">
-            <div class="content-padding">
-                <h2 class="highlight-header">Acknowledgments</h2>
-                <div class="section-content">
-                    <p>
-                        This workshop is supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. RS-2024-00406985).
-                    </p>
-                </div>
+    <section id="acknowledgments" class="mb-5">
+        <div class="content-padding">
+            <h2 class="highlight-header">Acknowledgments</h2>
+            <div class="section-content">
+                <p>
+                    This workshop is supported by the National Research Foundation of Korea (NRF) grant funded by the
+                    Korea government (MSIT) (No. RS-2024-00406985).
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
 
     </div>
 
@@ -472,38 +573,47 @@
         body {
             font-family: Arial, sans-serif;
         }
-        
+
         .highlight-header {
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
             font-size: 2rem;
             color: #ffffff;
-            background-color: #1E3269; /* 박스 배경색 */
+            background-color: #1E3269;
+            /* 박스 배경색 */
             padding: 10px 15px;
-            border-radius: 8px; /* 둥근 모서리 */
+            border-radius: 8px;
+            /* 둥근 모서리 */
             text-transform: capitalize;
             margin-bottom: 20px;
         }
+
         .content-padding {
-            padding: 0 15px; /* 왼쪽과 오른쪽에 패딩 추가 */
+            padding: 0 15px;
+            /* 왼쪽과 오른쪽에 패딩 추가 */
         }
 
         @media (min-width: 768px) {
             .content-padding {
-                padding: 0 30px; /* 더 넓은 화면에서는 패딩 증가 */
+                padding: 0 30px;
+                /* 더 넓은 화면에서는 패딩 증가 */
             }
+
             .top-25 {
-                top: 15%; /* 작은 화면에서는 텍스트를 더 위로 이동 */
+                top: 15%;
+                /* 작은 화면에서는 텍스트를 더 위로 이동 */
             }
-    
+
             .bottom-10 {
-                bottom: 5%; /* 날짜 텍스트를 더 위로 이동 */
+                bottom: 5%;
+                /* 날짜 텍스트를 더 위로 이동 */
             }
         }
 
         @media (min-width: 1200px) {
             .content-padding {
-                padding: 0 50px; /* 데스크톱 화면에서는 더 넓은 패딩 */
+                padding: 0 50px;
+                /* 데스크톱 화면에서는 더 넓은 패딩 */
             }
         }
     </style>
@@ -529,11 +639,13 @@
                     <ul class="list-unstyled">
                         <li>
                             <i class="bi bi-globe"></i>
-                            <a href="https://pakdd2025.org/" target="_blank" class="text-light">PAKDD 2025 Main Conference</a>
+                            <a href="https://pakdd2025.org/" target="_blank" class="text-light">PAKDD 2025 Main
+                                Conference</a>
                         </li>
                         <li>
                             <i class="bi bi-globe"></i>
-                            <a href="https://cmt3.research.microsoft.com/GLFM2025" target="_blank" class="text-light">Paper Submission Portal</a>
+                            <a href="https://cmt3.research.microsoft.com/GLFM2025" target="_blank"
+                                class="text-light">Paper Submission Portal</a>
                         </li>
                         <li class="mt-2">
                             <i class="bi bi-geo-alt"></i>
