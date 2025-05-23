@@ -245,7 +245,8 @@
       <div class="content-padding">
         <h2 class="highlight-header">Program Schedule</h2>
         <div class="section-content">
-          <p><strong>Date:</strong> June 10, 2025<br>
+          <p>
+            <strong>Date:</strong> June 10, 2025<br>
             <strong>Location:</strong> Boardroom (Third floor), Sydney Masonic Centre
           </p>
     
@@ -258,17 +259,22 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="text-center bg-light">13:30 - 14:05</td>
-                <td class="fw-semibold text-primary"><a href="#keynote1" class="text-decoration-none">Keynote Talk 1</a></td>
+              <!-- Keynote -->
+              <tr class="bg-keynote">
+                <td class="text-center">13:30 - 14:05</td>
+                <td class="fw-semibold text-primary">
+                  <a href="#keynote1" class="text-decoration-none">Keynote Talk 1</a>
+                </td>
                 <td>
                   <strong>Evangelos (Vagelis) Papalexakis</strong><br>
                   <small class="text-muted">University of California Riverside</small><br>
                   <em>It's all about the latent structure: Tensor and graph methods for actionable insights</em>
                 </td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">14:05 - 14:35</td>
+    
+              <!-- Invited Talks -->
+              <tr class="bg-invited">
+                <td class="text-center">14:05 - 14:35</td>
                 <td class="fw-semibold text-info">Invited Talks</td>
                 <td>
                   <ul class="list-unstyled mb-0">
@@ -293,8 +299,10 @@
                   </ul>
                 </td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">14:35 - 15:05</td>
+    
+              <!-- Regular Workshop Papers -->
+              <tr class="bg-regular">
+                <td class="text-center">14:35 - 15:05</td>
                 <td class="fw-semibold text-success">Regular Workshop Papers</td>
                 <td>
                   <ul class="list-unstyled mb-0">
@@ -322,22 +330,30 @@
                   </ul>
                 </td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">15:05 - 15:35</td>
+    
+              <!-- Break -->
+              <tr class="bg-break">
+                <td class="text-center">15:05 - 15:35</td>
                 <td class="fw-semibold text-muted">Tea Break</td>
                 <td></td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">15:35 - 16:10</td>
-                <td class="fw-semibold text-primary"><a href="#keynote2" class="text-decoration-none">Keynote Talk 2</a></td>
+    
+              <!-- Keynote 2 -->
+              <tr class="bg-keynote">
+                <td class="text-center">15:35 - 16:10</td>
+                <td class="fw-semibold text-primary">
+                  <a href="#keynote2" class="text-decoration-none">Keynote Talk 2</a>
+                </td>
                 <td>
                   <strong>Junbin Gao</strong><br>
                   <small class="text-muted">University of Sydney</small><br>
                   <em>From Continuous Dynamics to Graph Neural Networks</em>
                 </td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">16:10 - 16:25</td>
+    
+              <!-- Invited Talks -->
+              <tr class="bg-invited">
+                <td class="text-center">16:10 - 16:25</td>
                 <td class="fw-semibold text-info">Invited Talks</td>
                 <td>
                   <div class="d-flex align-items-start">
@@ -349,8 +365,10 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td class="text-center bg-light">16:25 - 17:00</td>
+    
+              <!-- Regular Workshop Papers -->
+              <tr class="bg-regular">
+                <td class="text-center">16:25 - 17:00</td>
                 <td class="fw-semibold text-success">Regular Workshop Papers</td>
                 <td>
                   <ul class="list-unstyled mb-0">
@@ -668,6 +686,11 @@
             padding: 0 15px;
             /* 왼쪽과 오른쪽에 패딩 추가 */
         }
+        .bg-keynote { background-color: #e6f2ff !important; }   /* Light Blue */
+        .bg-invited { background-color: #e9fbe6 !important; }   /* Light Green */
+        .bg-regular { background-color: #fffbe6 !important; }   /* Light Yellow */
+        .bg-break   { background-color: #f2f2f2 !important; }   /* Light Grey */
+
 
         @media (min-width: 768px) {
             .content-padding {
