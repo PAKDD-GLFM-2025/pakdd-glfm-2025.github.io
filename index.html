@@ -10,6 +10,16 @@
     <title>PAKDD 2025 GLFM Workshop Homepage</title>
 </head>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // if there is a hash, remove it and reset scroll
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+      window.scrollTo(0, 0);
+    }
+  });
+</script>
+
 <body>
     <!-- Add this right after <body> tag -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E3269;">
@@ -263,7 +273,8 @@
               <tr>
                   <td class="text-center time-cell">13:30 - 14:05</td>
                   <td class="session-keynote fw-semibold text-primary">
-                    <a href="#keynote1" class="text-decoration-none">Keynote Talk 1</a>
+                    Keynote Talk 1
+                    <a href="#keynote1" class="btn btn-sm btn-outline-primary ms-2">Details</a>
                   </td>
                   <td>
                   <strong>Evangelos (Vagelis) Papalexakis</strong><br>
@@ -311,7 +322,8 @@
               <tr>
                 <td class="text-center time-cell">15:35 - 16:10</td>
                 <td class="session-keynote fw-semibold text-primary">
-                   <a href="#keynote2" class="text-decoration-none">Keynote Talk 2</a>
+                   Keynote Talk 2
+                    <a href="#keynote2" class="btn btn-sm btn-outline-primary ms-2">Details</a>
                 </td>
                 <td>
                   <strong>Junbin Gao</strong><br>
@@ -655,6 +667,13 @@
         }
         #schedule table tbody td.session-break {
           background-color: #f8f9fa !important;  /* Light Gray (darker) */
+        }
+        #schedule-table td.time-cell,
+        #schedule-table td.session-keynote,
+        #schedule-table td.session-invited,
+        #schedule-table td.session-regular,
+        #schedule-table td.session-break {
+          color: #000 !important;
         }
 
 
